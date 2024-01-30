@@ -7,6 +7,7 @@
   </head>
 
   <body>
+    <a href="./bonus.html">Click for Bonus file</a>
     <h1>Sahil Grewal</h1>
     <h2>El Maguey Restaurant</h2>
 
@@ -62,6 +63,68 @@
       words, books continue to be gateways to new ideas, emotions, and
       possibilities. Here are some of the best book recommendations by me.
     </p>
-    
+    <table border="2">
+      <tr>
+        <th>NAME</th>
+        <th>REASON</th>
+        <th>AUTHOR</th>
+      </tr>
+      <tr>
+        <td>The God of Small Things</td>
+        <td>
+          A captivating exploration of family, society, and love in the Indian
+          state of Kerala.
+        </td>
+        <td>Arundhati Roy</td>
+      </tr>
+      <tr>
+        <td>Pride and Prejudice</td>
+        <td>
+          A classic novel delving into love, class, and manners in early
+          19th-century England.
+        </td>
+        <td>Jane Austen</td>
+      </tr>
+      <tr>
+        <td>Great Expectations</td>
+        <td>
+          Dickens' compelling narrative unfolds the coming-of-age story set in
+          Victorian England.
+        </td>
+        <td>Charles Dickens</td>
+      </tr>
+      <tr>
+        <td>1984</td>
+        <td>
+          A dystopian masterpiece offering a chilling vision of a totalitarian
+          society in the United Kingdom.
+        </td>
+        <td>George Orwell</td>
+      </tr>
+    </table>
+    <hr />
+    <h2>Code Fencing</h2>
+    <p>
+      The below code helps us to Set logging for debug(generally for detecting
+      errors and testing purposes) level along with file name and output to a
+      sample.log file in the respective path.
+    </p>
+    <pre>import logging
+
+        logger = logging.getLogger(__name__)
+        logger.setLevel(logging.DEBUG)
+        
+        formatter = logging.Formatter('%(asctime)s:%(name)s:%(message)s')
+        
+        file_handler = logging.FileHandler('sample.log')
+        file_handler.setLevel(logging.ERROR)
+        file_handler.setFormatter(formatter)
+        
+        stream_handler = logging.StreamHandler()
+        stream_handler.setFormatter(formatter)
+        
+        logger.addHandler(file_handler)
+        logger.addHandler(stream_handler) </pre>
+        <a href="https://code.pieces.app/collections/python">Refer to the source of the code</a>
   </body>
 </html>
